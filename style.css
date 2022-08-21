@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+:root{
+    --color1: rgb(241, 241, 241);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+}
+
+body a{
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: 600;
+}
+
+body a:hover{
+    text-decoration: underline;
+}
+
+header{
+    height: 150px;
+    background-image: linear-gradient(to bottom, #080808fa, #2c2c2cef) ;
+    text-align: center;
+    color: var(--color1);
+    text-shadow: 1px 1px 0px black;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-size: 2.2em;
+}
+
+header > p{
+    padding-bottom: 50px;
+    font-size: 1em;
+}
+
+main h2{
+    padding-top: 20px;
+}
+
+.texto{
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.texto > p{
+    line-height: 1.5em;
+    text-indent: 30px;
+}
+
+.cpu, .mb, .ram, .gpu, .hd, .ssd, .psu{
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
+}
+
+.componente > h3{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+.cpu{
+    background-image: url('img/cpu.jpg');
+}
+
+.mb{
+    background-image: url('img/mb.jpg');
+}
+
+.ram{
+    background-image: url('img/rammemory.jpg');
+}
+
+.gpu{
+    background-image: url('img/gpu.jpg');
+}
+
+.hd{
+    background-image: url('img/hd.jpg');
+}
+
+.ssd{
+    background-image: url('img/ssd.jpg');
+}
+
+.psu{
+    background-image: url('img/psu.jpg');
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.945);
+    color: var(--color1);
+    text-align: center;
+    padding: 10px;
+}
